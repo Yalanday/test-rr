@@ -1,29 +1,33 @@
-# test-rr
+# test-rr Тестовое задание "Рабочие руки"
 
-This template should help get you started developing with Vue 3 in Vite.
+**Исполнитель: Яландаев Андрей**     
+📧 Email: [yalanday256@gmail.com](mailto:yalanday256@gmail.com)  
+📱 Telegram: [@YalanDay](https://t.me/YalanDay)
 
-## Recommended IDE Setup
+## Технологии
+- NODE VERSION = v22.14.0
+- Vue.js 3
+- TypeScript
+- Pinia
+- Vue I18n
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Русская версия
+![Календарь на русском языке](docs/cal-ru.png)
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Английская версия
+![Календарь на английском языке](docs/cal-en.png)
 
 ## Project Setup
 
 ```sh
-npm install
+
+yarn install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
-```
 
-### Compile and Minify for Production
+yarn dev
 
-```sh
-npm run build
 ```
