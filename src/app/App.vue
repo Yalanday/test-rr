@@ -1,5 +1,5 @@
 <script setup>
-  import {CalendarPage} from "@/pages/index.ts";
+  import {CalendarPage} from "@/pages";
 </script>
 
 <template>

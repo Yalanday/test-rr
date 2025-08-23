@@ -19,14 +19,14 @@ const emit = defineEmits<{
 
 const calendarStore = useCalendarStore()
 
-// Computed
+// computed
 const currentDate = computed(() => calendarStore.currentDate)
 const selectedDate = computed(() => calendarStore.selectedDate)
 const currentLanguage = computed(() => calendarStore.currentLanguage)
 const firstDayWeekday = computed(() => calendarStore.firstDayWeekday)
 const daysInMonth = computed(() => calendarStore.daysInMonth)
 
-// Methods
+// methods
 const previousMonth = () => {
   calendarStore.previousMonth()
 }

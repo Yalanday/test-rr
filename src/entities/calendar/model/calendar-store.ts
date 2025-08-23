@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { CalendarDate, Language} from "@/shared/types";
+import { Language} from "@/shared/types";
 import {
   getCurrentDate,
   getFirstDayOfMonth,
@@ -13,7 +13,7 @@ export const useCalendarStore = defineStore('calendar', {
   state: (): CalendarState => ({
     currentDate: getCurrentDate(),
     selectedDate: null,
-    currentLanguage: 'ru'
+    currentLanguage: Language.RU
   }),
 
   getters: {

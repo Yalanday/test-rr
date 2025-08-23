@@ -6,6 +6,7 @@ import {Language} from "@/shared/types";
 const props = defineProps<PropsCalendarGrid>()
 const emit = defineEmits<{ dateSelected: [day: number] }>()
 
+// computed
 const emptyDays = computed(() => {
   if (!props.firstDayWeekday && props.firstDayWeekday !== 0) return []
 
@@ -18,6 +19,7 @@ const emptyDays = computed(() => {
   return adjustedWeekday > 0 ? Array.from({ length: adjustedWeekday }, (_, i) => i) : []
 })
 
+// methods
 const isSelected = (day: number) => {
   if (!props.selectedDate) return false
   return props.selectedDate.year === props.currentDate.year &&
@@ -36,8 +38,8 @@ const isToday = (day: number) => {
 <template>
   <div :class="$style.calendarGrid">
     <div
-        v-for="i in emptyDays"
-        :key="`empty-${i}`"
+        v-for="emptyDay in emptyDays"
+        :key="`empty-${emptyDay}`"
         :class="[$style.day, $style.empty]"
     ></div>
 

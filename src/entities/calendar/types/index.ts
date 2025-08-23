@@ -11,5 +11,5 @@ export interface PropsCalendarGrid {
     selectedDate: CalendarDate | null
     firstDayWeekday: number
     daysInMonth: number
-    currentLanguage: 'ru' | 'en'
+    currentLanguage: Language
 }

@@ -116,13 +116,6 @@ watch(() => props.currentLanguage, (newLanguage) => {
   height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-}
-
-.arrow {
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
 
   &.left {
     border-right: 8px solid currentColor;
